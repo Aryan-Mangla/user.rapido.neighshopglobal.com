@@ -1,9 +1,7 @@
-# Netlify site: user.rapido.neighshopglobal.com
-# Base directory in UI: new-version/frontend/rider
+# Deploy repo: pre-built static files at repo root (no npm build on Netlify).
 
 [build]
-  command = "npm ci --prefix .. && npm run build:rider --prefix .."
-  publish = "dist"
+  publish = "."
 
 [build.environment]
   NODE_VERSION = "20"
